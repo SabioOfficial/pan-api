@@ -3,7 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --lesser-foreground: #313131; /* minor version */
+  --lesser-50-foreground: #313131;
+  --lesser-100-foreground: #474747;
+  --lesser-200-foreground: #636363;
 }
 
 @theme inline {
@@ -23,6 +25,9 @@
   :root {
     --background: #0e0e0e;
     --foreground: #e2e2e2;
+    --lesser-50-foreground: #c0c0c0;
+    --lesser-100-foreground: #a3a3a3;
+    --lesser-200-foreground: #6e6e6e;
   }
 }
 
@@ -36,8 +41,41 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 hr {
   border-top-width: 2px;
+}
+
+th, td {
+  text-align: left;
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 4);
+}
+
+th {
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4) calc(var(--spacing) * 1) calc(var(--spacing) * 4);
+}
+
+tr:last-of-type td {
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 4) calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+}
+
+thead, tbody {
+  margin: calc(var(--spacing) * 2);
+}
+
+.text-lesser-50 {
+  color: var(--lesser-50-foreground);
+}
+
+.text-lesser-100 {
+  color: var(--lesser-100-foreground);
+}
+
+.text-lesser-200 {
+  color: var(--lesser-200-foreground);
 }
 
 .flex-flow-col {
@@ -51,4 +89,8 @@ hr {
 .hover-invert-btn:hover {
   color: var(--background);
   background-color: var(--foreground);
+}
+
+.max-w-half {
+  max-width: 50%;
 }

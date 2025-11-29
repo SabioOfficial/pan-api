@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex flex-col gap-2">
         <h1 className="flex flex-row gap-4 text-5xl items-end">
           <Image src="../logo.svg" alt="Pan API logo created by Sabio" width={0} height={0} style={{height: "1em"}} className="w-auto mb-1.25"></Image> Pan API
-          <span className="text-base mb-0.5"> v(a)0.01+v(c)0.477</span>
+          <span className="text-base mb-0.5 text-lesser-50"> v(a)0.01+v(c)0.477</span>
         </h1>
         <p className="text-yellow-300" id="slug__el">{slugs[slugRand]}</p>
       </div>
@@ -35,11 +35,49 @@ export default function Home() {
         </div>
       </div>
       <hr></hr>
-      <div className="flex flex-col gap-5 items-start">
-        <h2 className="text-3xl">Choose Pan API!</h2>
-        <p>
-          We make fetching information from Flavortown easier. No more selecting elements- just one API!
-        </p>
+      <div className="flex flex-col gap-4 max-w-half">
+        <div className="flex flex-col gap-5 items-start">
+          <h2 className="text-3xl">Choose Pan API!</h2>
+          <p>
+            We make fetching information from Flavortown easier. No more selecting elements- just one API!
+          </p>
+        </div>
+        <table className="border-2 p-4">
+          <thead className="text-lg">
+            <tr>
+              <th></th>
+              <th>Flavortown</th>
+              <th>Pan API</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kitchen</td>
+              <td>Yes</td>
+              <td className="text-lesser-100">December</td>
+            </tr>
+            <tr>
+              <td>Explore</td>
+              <td>Yes</td>
+              <td className="text-lesser-100">December</td>
+            </tr>
+            <tr>
+              <td>Projects</td>
+              <td>Yes</td>
+              <td className="text-lesser-100">December</td>
+            </tr>
+            <tr>
+              <td>Vote</td>
+              <td>Yes</td>
+              <td className="text-lesser-200">Not Planned</td>
+            </tr>
+            <tr>
+              <td>Shop</td>
+              <td>Yes</td>
+              <td>Yes <span className="text-lesser-50 italic">(Alpha)</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );
