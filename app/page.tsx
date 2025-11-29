@@ -21,7 +21,7 @@ export default function Home() {
       <div className="flex flex-col gap-2">
         <h1 className="flex flex-row gap-4 text-5xl items-end">
           <Image src="/logo.svg" alt="Pan API logo created by Sabio" width={0} height={0} style={{height: "1em"}} className="w-auto mb-1.25"></Image> Pan API
-          <span className="text-base mb-0.5 text-lesser-50"> v(a)0.01+v(c)0.477</span>
+          <span className="text-base mb-0.5 text-lesser-50"> v(a)0.01+v(c)0.481</span>
         </h1>
         <p className="text-yellow-300" id="slug__el">{slugs[slugRand]}</p>
       </div>
@@ -30,7 +30,7 @@ export default function Home() {
         <h2 className="text-3xl">By the Flavortown community, for the Flavortown community.</h2>
         <p>Flavortown-centered project? <del>Flavortown scraper? (I'm talking to you Ali)</del> This is for you!</p>
         <div className="flex flex-row gap-6 items-center mt-2">
-          <button className="cursor-pointer border-2 px-4 py-1.5 hover-invert-btn">Documentation</button>
+          <button className="cursor-pointer border-2 px-4 py-1.5 hover-invert-btn"><a href="/documentation" className='no-underline'>📓 Documentation</a></button>
           <button className="cursor-pointer hover-lift-btn">Projects</button>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Home() {
         <Image src="/contributors/SabioOfficial-72x72.png" width={48} height={48} alt="SabioOfficial's (aka SabioTheDev or SabioReal) profile picture."></Image>
         <div className="flex flex-col">
           <p className="text-xl">still me</p>
-          <p className="text-sm text-lesser-50">please <a href="https://github.com/SabioOfficial/pan-api" target='_blank'>contribute</a> to the repository i beg you</p>
+          <p className="text-sm text-lesser-50">please <a href="https://github.com/SabioOfficial/pan-api" target='_blank' className='pre'>contribute</a> to the repository i beg you</p>
         </div>
       </div>
       <hr></hr>

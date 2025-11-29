@@ -6,6 +6,7 @@
   --lesser-50-foreground: #313131;
   --lesser-100-foreground: #474747;
   --lesser-200-foreground: #636363;
+  --blur-xss: 2px;
 }
 
 @theme inline {
@@ -42,7 +43,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+a.pre {
   color: var(--color-blue-500);
   text-decoration: underline;
 }
@@ -114,4 +115,9 @@ thead, tbody {
 
 .max-w-half {
   max-width: 50%;
+}
+
+.blur-xxs {
+  --tw-blur: blur(var(--blur-xss) /* 2px */);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 }
