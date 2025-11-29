@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-flow-col gap-1 p-8 h-full">
-      <div className="grow-0 shrink basis-auto">
+    <div className="flex flex-flow-col gap-4 p-8 h-full">
+      <div className="flex flex-col gap-1 grow-0 shrink basis-auto">
         <h1 className="text-5xl">Pan API</h1>
         <p>v(a)0.01+v(c)0.477</p>
       </div>
