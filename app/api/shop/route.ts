@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const beautify = require('js-beautify/js').js
 
 require('dotenv').config(); // idk if this is required for nextjs but oh well
 
@@ -29,7 +30,7 @@ export async function GET(request: Request) {
             price: $details.find('span.shop-item-card__price').text().trim().replace(/🍪|\.\d+|,/g, "")
         });
     });
-    return new Response(JSON.stringify(items), {
+    return new Response(beautify(JSON.stringify(items), { indent_size: 2, space_in_empty_paren: true }), {
         status: 200,
         headers: { 'Content-Type': 'application/json' }
     });
