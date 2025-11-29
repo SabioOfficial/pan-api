@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --lesser-foreground: #313131; /* minor version */
 }
 
 @theme inline {
@@ -29,6 +30,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+hr {
+  border-top-width: 2px;
+}
+
 .flex-flow-col {
   flex-flow: column;
+}
+
+.hover-invert-btn {
+  transition: all 400ms ease;
+}
+
+.hover-invert-btn:hover {
+  color: var(--background);
+  background-color: var(--foreground);
 }
