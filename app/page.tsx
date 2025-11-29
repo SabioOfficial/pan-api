@@ -35,6 +35,12 @@ export default function Home() {
         </div>
       </div>
       <hr></hr>
+      <div className="flex flex-col gap-5 items-start">
+        <h2 className="text-3xl">Choose Pan API!</h2>
+        <p>
+          We make fetching information from Flavortown easier. No more selecting elements- just one API!
+        </p>
+      </div>
     </div>
   );
 }

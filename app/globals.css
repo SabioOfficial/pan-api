@@ -13,6 +13,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-yellow-300: oklch(55.362% 0.11098 97.114);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0e0e0e;
